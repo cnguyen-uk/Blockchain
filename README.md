@@ -1,5 +1,5 @@
-# blockchain
-*A simple locally run blockchain.
+# Blockchain
+*A simple locally run blockchain.*
 
 A [blockchain](https://en.wikipedia.org/wiki/Blockchain) is a distributed public ledger, that is, anyone can view the transaction details in a blockchain, and the transaction data is spread over many nodes (typically computers), which makes the data difficult to meaningfully attack.
 
