@@ -29,7 +29,7 @@ class Block:
                     + "Current hash: " + str(self.generate_hash()))
 
     def generate_hash(self):
-        # This method returns a hash based on key block information.
+        """Return a hash based on key block information."""
         block_contents = (str(self.timestamp) + str(self.transactions)
                           + str(self.previous_hash) + str(self.nonce))
         block_hash = sha256(block_contents.encode())
