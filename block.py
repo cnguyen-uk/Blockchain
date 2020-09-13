@@ -3,7 +3,7 @@
 
 Note that although every block has a timestamp, a proper
 implementation should have a timestamp which is static from when a
-block is finally placed into the blockchain. In our implementation
+block is finally placed into the blockchain.  In our implementation
 this timestamp changes every time the code is run.
 
 Our hashing function is SHA-256 as it is used in most cryptocurrencies.
@@ -19,7 +19,7 @@ class Block:
         self.timestamp = datetime.now()
         self.transactions = transactions
         self.previous_hash = previous_hash
-        self.nonce = 0  # Initial guess for future Proof-of-Work.
+        self.nonce = 0  # Initial guess for future Proof-of-Work
         self.hash = self.generate_hash()
     
     def __repr__(self):
