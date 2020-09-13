@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-This is our Block class for transaction storage.
+"""This is our Block class for transaction storage.
 
 Note that although every block has a timestamp, a proper
 implementation should have a timestamp which is static from when a
