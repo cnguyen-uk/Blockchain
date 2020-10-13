@@ -18,7 +18,7 @@ class Blockchain:
         new_block = Block(transactions, previous_hash)
         self.chain.append(new_block)
 
-        # Allows nodes to verify Proof-of-Work via proof_nonce.
+        # This allows nodes to verify Proof-of-Work via proof_nonce.
         proof, proof_nonce = self.proof_of_work(new_block)
         return proof, proof_nonce, new_block
 
