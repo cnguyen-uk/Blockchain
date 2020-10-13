@@ -21,7 +21,7 @@ class Block:
         self.previous_hash = previous_hash
         self.nonce = 0  # Initial guess for future Proof-of-Work
         self.hash = self.generate_hash()
-    
+
     def __repr__(self):
             return ("Timestamp: " + str(self.timestamp) + "\n"
                     + "Transactions: " + str(self.transactions) + "\n"
