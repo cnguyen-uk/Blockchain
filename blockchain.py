@@ -7,21 +7,21 @@ class Blockchain:
     def __init__(self):
         self.chain = []
         self.genesis_block()
-    
+
     def genesis_block(self):
         """Initialise the blockchain with a unique block."""
         self.chain.append(Block([], "0"))
-        
+
     def add_block(self, transactions):
         """Add new blocks to be added to the blockchain."""
         previous_hash = self.chain[-1].hash
         new_block = Block(transactions, previous_hash)
         self.chain.append(new_block)
-        
+
         # Allows nodes to verify Proof-of-Work via proof_nonce.
         proof, proof_nonce = self.proof_of_work(new_block)
         return proof, proof_nonce, new_block
-    
+
     def validate(self):
         """Check blockchain veracity."""
         for i in range(1, len(self.chain)):
@@ -38,10 +38,10 @@ hash value stored in block {i}."""
                 return False
         print("This blockchain is valid.")
         return True
-    
+
     def proof_of_work(self, block, difficulty = 2):
         """Implement Proof-of-Work prior to adding blocks.
-        
+
         Arguments:
         block -- the block to be added to the blockchain
         difficulty -- higher difficulties need more computational work
