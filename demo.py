@@ -14,7 +14,7 @@ from blockchain import Blockchain
 def transaction(amount, sender, receiver):
     return {"amount": amount, "sender": sender, "receiver": receiver}
 
-# Setting up some example transactions.
+# A set up of some example transactions to use in the upcoming demonstration.
 transaction1 = transaction("30", "Alice", "Bob")
 transaction2 = transaction("200", "Bob", "Alice")
 transaction3 = transaction("300", "Alice", "Charlie")
